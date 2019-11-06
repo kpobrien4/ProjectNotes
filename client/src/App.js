@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Form from './containers/Form';
 import List from './containers/List';
 import ListShow from './containers/ListShow';
+import Errors from './components/Errors';
 import './App.css';
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
           <Route exact path="/tracks" component={List} />
           <Route exact path="/tracks/new" component={Form} />
           <Route exact path="/tracks/:id" component={ListShow} />
+          <Route component={Errors} />
         </Switch>
       </div>
     </Router>
