@@ -1,5 +1,8 @@
+import uuid from 'uuid'
+
 function trackReducer(state = {
-    tracks: []
+    tracks: [],
+    id: uuid()
   }, action){
 
   }

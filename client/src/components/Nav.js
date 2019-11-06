@@ -8,8 +8,8 @@ export class Nav extends Component {
         <div className="container">
           <Link to="/" className="brand-logo">Home</Link>
           <ul className="right">
-            <li><Link to="/blogs/new">Create</Link></li>
-            <li><Link to="/blogs">View</Link></li>
+            <li><Link to="/tracks/new">Create</Link></li>
+            <li><Link to="/tracks">View</Link></li>
           </ul>
         </div>
       </nav>
