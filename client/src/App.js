@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Nav from './components/Nav';
 import Home from './components/Home';
+import Form from './containers/Form';
+import List from './containers/List';
+import ListShow from './containers/ListShow';
 import './App.css';
 
 class App extends Component {
@@ -12,8 +15,9 @@ class App extends Component {
       <div className="container">
         <Switch>
           <Route exact path="/" component={Home} />
-          {/* <Route exact path="/tracks" component={Tracks} />
-          <Route exact path="/tracks/new" component={New} /> */}
+           <Route exact path="/tracks" component={List} />
+          <Route exact path="/tracks/new" component={Form} />
+          <Route exact path="/tracks/:id" component={ListShow} />
         </Switch>
       </div>
     </Router>
