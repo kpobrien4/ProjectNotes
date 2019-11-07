@@ -5,4 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-tracks = Track.create([{title: "Synth strings 1", notes: "Add a piano"}])
+track1 = Track.create([{title: "Pop rock song", notes: "Drums should be tighter"}])
+track2 = Track.create([{title: "Banger1", notes: "Level out 808s"}])
+track3 = Track.create([{title: "Acoustic ballad", notes: "Lyrics about love"}])

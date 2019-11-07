@@ -1,5 +1,3 @@
-import React from 'react'
-import ReactDOM from 'react-dom';
-
+const baseUrl = 'http://localhost:3001'
 
 
