@@ -9,7 +9,6 @@ const ListItem = ({ title, notes, id }) => {
     <Card>
       <CardContent>
         <CardTitle><Link to={`/tracks/${id}`}>{title}</Link></CardTitle>
-        <p>{ notes }</p>
       </CardContent>
     </Card>
   )

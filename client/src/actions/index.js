@@ -38,6 +38,3 @@ export const addTrack = ( track, history ) => {
     }
   }
   
-  export const removeTrack = (id, history) => {
-  
-  }
