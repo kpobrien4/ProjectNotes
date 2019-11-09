@@ -16,7 +16,6 @@ class List extends Component {
       const tracks = this.props.tracks.map(( track, i ) => ( 
           <ListItem key={i}
                     title={ track.title }
-                    notes={ track.notes }
                     id={ track.id }
           />
       ))
