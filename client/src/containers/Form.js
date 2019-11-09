@@ -35,7 +35,7 @@ export class Form extends Component {
         <h2>Add a track:</h2>
       <form id="track-form" onSubmit={ this.handleSubmit }>
         <Row>
-          <Col s={12} m={4} l={4}>
+          <Col s={12} m={4} l={6}>
             <div className="input-field">
               <input type="text" name="title" id="title" value={this.state.title} onChange={this.handleChange} />
               <label htmlFor="title">Title</label>

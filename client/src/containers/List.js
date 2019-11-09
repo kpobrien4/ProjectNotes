@@ -21,7 +21,7 @@ class List extends Component {
       ))
       return (
           <div className="track-lists">
-            <h3 className="center">List of Tracks</h3>
+            <h3>List of Tracks:</h3>
             { tracks }
           </div>
       )
