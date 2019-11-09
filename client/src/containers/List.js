@@ -40,7 +40,7 @@ const mapStateToProps = state => {
   return {
     tracks: state.tracksReducer.tracks,
     loading: state.tracksReducer.loading,
-    tracksLoaded: state.tracksReducer.tracksLoaded
+    tracksLoaded: state.tracksReducer.trackLoaded
   }
 }
 
