@@ -17,6 +17,7 @@ class List extends Component {
           <ListItem key={i}
                     title={ track.title }
                     id={ track.id }
+                    created_at={ track.created_at }
           />
       ))
       return (
