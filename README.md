@@ -1,24 +1,12 @@
-# README
+TrackNotes
+This web app was designed as a simple notes app to keep track of any notes surrounding musical projects for further direction and context.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Usage
+Run rake start to access the website in your local server.
 
-Things you may want to cover:
+Contributing
+Bug reports and pull requests are welcome on GitHub at https://github.com/kpobrien4/react-final-project-hr
 
-* Ruby version
+Author Kevin O'Brien
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Acknowledgements Enoch Griffith
