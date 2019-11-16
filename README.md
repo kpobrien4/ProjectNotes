@@ -7,7 +7,8 @@ Run rake start to access the website in your local server.
 ## Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/kpobrien4/react-final-project-hr
 
-## Author: Kevin O'Brien
+## Author
+Kevin O'Brien
 
 ## Acknowledgements
 Enoch Griffith
