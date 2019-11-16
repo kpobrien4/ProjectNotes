@@ -1,4 +1,4 @@
-TrackNotes
+# TrackNotes
 This web app was designed as a simple notes app to keep track of any notes surrounding musical projects for further direction and context.
 
 Usage
