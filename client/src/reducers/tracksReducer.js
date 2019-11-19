@@ -30,6 +30,11 @@ export default (state=initialState, action) => {
         ...state,
         tracks: [...state.tracks, action.track]
       }
+      // case 'DELETE_TRACK':
+      //   return {
+      //     ...state,
+      //     tracks: state.tracks.filter(track => track.id !== action.id)
+      //   }
     default:
       return state;
   }

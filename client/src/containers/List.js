@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import ListItem from './ListItem';
+import ListItem from '../components/ListItem';
 
 import { getTracks } from '../actions';
 
