@@ -11,6 +11,8 @@ class List extends Component {
     }
   }
 
+  
+
   render() {
     if( !this.props.loading ) {
       const tracks = this.props.tracks.map(( track, i ) => ( 
@@ -22,6 +24,7 @@ class List extends Component {
       ))
       return (
           <div className="track-lists">
+            {/* <input type="text" className="input" placeholder="Search..." /> */}
             <h3>List of Tracks:</h3>
             { tracks }
           </div>
