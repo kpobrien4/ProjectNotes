@@ -1,5 +1,5 @@
 {
-  "name": "react-final-project",
+  "name": "react-final-project-hr",
   "license": "MIT",
   "engines": {
     "node": "12.10.0",
@@ -16,5 +16,10 @@
     "react-router-dom": "^5.1.2",
     "redux": "^4.0.4",
     "redux-thunk": "^2.3.0"
-  }
+  },
+  "version": "1.0.0",
+  "description": "App to take notes on musical projects",
+  "main": "index.js",
+  "repository": "git@github.com:kpobrien4/react-final-project-hr.git",
+  "author": "Kevin O'Brien"
 }
