@@ -46,7 +46,7 @@ export class Form extends Component {
         <div className="input-field">
           <textarea name="notes" id="notes" cols="30" rows="50" value={ this.state.notes } onChange={this.handleChange} required></textarea>
         </div>
-        <input type="submit" value="Add Track" className="btn light-blue darken-1"  />
+        <input type="submit" value="Add Track" className="btn light-blue darken-1 addbutton"  />
       </form>
       </div>
     )

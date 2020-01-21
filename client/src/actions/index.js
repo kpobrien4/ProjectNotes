@@ -40,7 +40,7 @@ export const addTrack = ( track, history ) => {
 
   export const deleteTrack = ( track, id, history ) => {
     return dispatch => {
-      return fetch('/tracks' + id, {
+      return fetch('/tracks/' + id, {
         method: "DELETE",
         headers: {
           'Accept': 'application/json',
@@ -50,6 +50,7 @@ export const addTrack = ( track, history ) => {
       })
       .then(resp => resp.json())
       .then(track => {
+        debugger
         dispatch({ type: "DELETE_TRACK", track })
         history.push('/')
       })

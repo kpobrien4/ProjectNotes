@@ -23,7 +23,7 @@ export class ListShow extends Component {
   handleSubmit = e => {
     e.preventDefault();
 
-    this.props.deleteTrack( this.state, this.id, this.props.history )
+    this.props.deleteTrack( this.state, this.props.currentTrack.id, this.props.history )
   }
 
   render() {
@@ -35,7 +35,7 @@ export class ListShow extends Component {
           <p>{new Date(this.props.currentTrack.created_at).toLocaleString()}</p>
           <p>{this.props.currentTrack.notes }</p>
           <form id="track-form" onSubmit={ this.handleSubmit }>
-          {/* <input type="submit" value="Delete Track" className="btn light-blue darken-1" /> */}
+          <input type="submit" value="Delete Track" className="btn light-blue darken-1 addbutton" /> 
           </form>
         </div>
       )
