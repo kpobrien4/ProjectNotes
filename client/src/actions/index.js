@@ -13,7 +13,7 @@ export const addTrack = ( track, history ) => {
       .then(resp => resp.json())
       .then(track => {
         dispatch({ type: "ADD_TRACK", track })
-        history.push('/tracks')
+        history.push('/')
       })
     }
   }
