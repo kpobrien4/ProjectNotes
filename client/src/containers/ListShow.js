@@ -15,7 +15,7 @@ export class ListShow extends Component {
     if(!this.props.loading && this.props.currentTrack ) {
       return (
         <div>
-          <h3>{this.props.currentTrack.title }</h3>
+          <h3 class="title">{ this.props.currentTrack.title }</h3>
           <p>{new Date(this.props.currentTrack.created_at).toLocaleString()}</p>
           <p>{this.props.currentTrack.notes }</p>
         </div>
