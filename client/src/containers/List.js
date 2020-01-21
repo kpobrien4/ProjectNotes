@@ -25,7 +25,7 @@ class List extends Component {
       return (
           <div className="track-lists">
             {/* <input type="text" className="input" placeholder="Search..." /> */}
-            <h4>List of Tracks:</h4>
+            <h4>List of Projects:</h4>
             <hr></hr>
             <div class="grid">
             { tracks }

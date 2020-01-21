@@ -6,7 +6,7 @@ export class Nav extends Component {
     return (<div>
       <nav className="light-blue darken-1">
         <div className="container">
-          <Link to="/" className="brand-logo">TrackNotes</Link>
+          <Link to="/" className="brand-logo">ProjectNotes</Link>
           {/* <ul className="right">
             <li><Link to="/tracks/new">Create a Track</Link></li>
             <li><Link to="/tracks">View Tracks</Link></li>
