@@ -1,8 +1,8 @@
-const baseUrl = 'http://localhost:3001'
+
 
 export const addTrack = ( track, history ) => {
     return dispatch => {
-      return fetch(baseUrl + '/tracks', {
+      return fetch('/tracks', {
         method: "POST",
         headers: {
           'Accept': 'application/json',
@@ -21,7 +21,7 @@ export const addTrack = ( track, history ) => {
   export const getTracks = () => {
     return dispatch => {
       dispatch({ type: "LOADING_TRACKS" })
-      return fetch(baseUrl + '/tracks')
+      return fetch('/tracks')
         .then(resp => resp.json())
         .then(tracks => {
           return dispatch({ type: 'GET_TRACKS', tracks })
@@ -32,7 +32,7 @@ export const addTrack = ( track, history ) => {
   export const getTrack = id => {
     return dispatch => {
       dispatch({ type: "LOADING_TRACKS" });
-      return fetch(baseUrl + '/tracks/' + id)
+      return fetch('/tracks/' + id)
         .then(resp => resp.json())
         .then( track => dispatch({ type: "GET_TRACK", track }))
     }
