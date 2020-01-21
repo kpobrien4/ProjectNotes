@@ -37,5 +37,23 @@ export const addTrack = ( track, history ) => {
         .then( track => dispatch({ type: "GET_TRACK", track }))
     }
   }
+
+  export const deleteTrack = ( track, id, history ) => {
+    return dispatch => {
+      return fetch('/tracks' + id, {
+        method: "DELETE",
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ track })
+      })
+      .then(resp => resp.json())
+      .then(track => {
+        dispatch({ type: "DELETE_TRACK", track })
+        history.push('/')
+      })
+    }
+  }
   
   

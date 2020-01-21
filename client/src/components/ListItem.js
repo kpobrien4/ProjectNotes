@@ -11,7 +11,7 @@ const ListItem = ({ title, notes, id, created_at }) => {
     <Link to={`/tracks/${id}`}>
     <Card>
       <CardContent>
-        <CardTitle><Link to={`/tracks/${id}`}>{title}</Link> </CardTitle>
+        <CardTitle>{title} </CardTitle>
         <p>{new Date(created_at).toLocaleString()}</p>
         {/* <Upvote /> */}
       </CardContent>

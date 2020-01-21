@@ -14,7 +14,7 @@ code {
 
 
 body {
-  font-family: "Droid Sans";
+  font-family: "Ubuntu" !important;
 }
 
 
@@ -34,6 +34,7 @@ body {
 	transition: 0.4s ease-out;
   box-shadow: 0px 7px 10px rgba(black, 0.5);
   overflow:hidden;
+  color: black
    
   }
 
