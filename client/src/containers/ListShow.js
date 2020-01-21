@@ -35,7 +35,7 @@ export class ListShow extends Component {
           <p>{new Date(this.props.currentTrack.created_at).toLocaleString()}</p>
           <p>{this.props.currentTrack.notes }</p>
           <form id="track-form" onSubmit={ this.handleSubmit }>
-          <input type="submit" value="Delete Track" className="btn light-blue darken-1 addbutton"/> 
+          <input type="submit" value="Click Twice To Delete" className="btn red darken-1 addbutton"/> 
           </form>
         </div>
       )
