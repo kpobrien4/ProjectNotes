@@ -4,7 +4,7 @@ export class Errors extends Component {
   render() {
     return (
       <div>
-        This page doesn't exist.
+        <h2>Excellent try pal, however there is nothing to find here.</h2>
       </div>
     )
   }

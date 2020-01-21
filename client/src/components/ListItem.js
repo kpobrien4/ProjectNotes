@@ -8,6 +8,7 @@ import Upvote from './Upvote'
 const ListItem = ({ title, notes, id, created_at }) => {
 
   return (
+    <Link to={`/tracks/${id}`}>
     <Card>
       <CardContent>
         <CardTitle><Link to={`/tracks/${id}`}>{title}</Link> </CardTitle>
@@ -15,6 +16,7 @@ const ListItem = ({ title, notes, id, created_at }) => {
         {/* <Upvote /> */}
       </CardContent>
     </Card>
+    </Link>
   )
 }
 
