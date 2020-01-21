@@ -1,4 +1,4 @@
-# TrackNotes
+# ProjectsNotes
 This web app was designed as a simple notes app to keep track of any notes surrounding musical projects for further direction and context.
 
 ## Usage
@@ -10,5 +10,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/kpobri
 ## Author
 Kevin O'Brien
 
-## Acknowledgements
-Enoch Griffith
