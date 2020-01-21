@@ -27,7 +27,9 @@ class List extends Component {
             {/* <input type="text" className="input" placeholder="Search..." /> */}
             <h3>List of Tracks:</h3>
             <hr></hr>
+            <div class="grid">
             { tracks }
+            </div>
           </div>
       )
     } else {
