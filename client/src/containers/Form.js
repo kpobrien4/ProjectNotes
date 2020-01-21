@@ -37,16 +37,16 @@ export class Form extends Component {
         <Row>
           <Col s={12} m={4} l={6}>
             <div className="input-field">
-              <input type="text" name="title" id="title" value={this.state.title} onChange={this.handleChange} />
+              <input type="text" name="title" id="title" value={this.state.title} onChange={this.handleChange} required/>
               <label htmlFor="title">Title</label>
             </div>
           </Col>
         </Row>
         <label htmlFor="notes">Notes</label>
         <div className="input-field">
-          <textarea name="notes" id="notes" cols="30" rows="50" value={ this.state.notes } onChange={this.handleChange} ></textarea>
+          <textarea name="notes" id="notes" cols="30" rows="50" value={ this.state.notes } onChange={this.handleChange} required></textarea>
         </div>
-        <input type="submit" value="Add Track" className="btn light-blue darken-1" />
+        <input type="submit" value="Add Track" className="btn light-blue darken-1"  />
       </form>
       </div>
     )
