@@ -35,11 +35,11 @@ code {
 	align-items: center;
 	transition: 0.4s ease-out;
   box-shadow: 0px 7px 10px rgba(black, 0.5);
-  overflow:hidden;
-  color: white;
+  /* overflow:hidden; */
+  /* color: white; */
   background: rgb(70, 172, 255);
 
-  opacity: 100%
+  /* opacity: 100% */
    
   }
 
