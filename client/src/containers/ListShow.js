@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
+import Nav from "../components/Nav"
 
 import { getTrack } from '../actions';
 
