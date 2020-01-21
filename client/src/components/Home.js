@@ -9,7 +9,7 @@ export class Home extends Component {
         <Link to="/tracks/new"><button class="right waves-effect waves-light btn-large light-blue darken-1 addbutton">Add Track</button></Link>
         <br></br>
         <h2 className="center">Welcome to ProjectNotes</h2>
-        <h4 class="center grey-text">Keep your projects on track</h4>
+        <h4 class="center grey-text">Keep your music projects on track</h4>
         <List></List>
       </div>
     )
