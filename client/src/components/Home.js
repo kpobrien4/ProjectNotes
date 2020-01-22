@@ -6,10 +6,10 @@ export class Home extends Component {
   render() {
     return (
       <div>
-        <Link to="/tracks/new"><button class="right waves-effect waves-light btn-large light-blue darken-1 addbutton">Add Track</button></Link>
         <br></br>
         <h2 className="center">Welcome to ProjectNotes</h2>
         <h4 class="center grey-text">Keep your music projects on track</h4>
+        <Link to="/tracks/new"><i class="material-icons addbutton right medium">add</i></Link>
         <List></List>
       </div>
     )
