@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import List from "../containers/List"
 import "../modal.css"
+import Form from '../containers/Form'
 
 export class Home extends Component {
   state = { show: false }
@@ -22,8 +23,7 @@ export class Home extends Component {
         <h2 className="center">Welcome to ProjectNotes</h2>
         <h4 class="center grey-text">Keep your music projects on track</h4>
         <Modal show={this.state.show} handleClose={this.hideModal} >
-          <p>Modal</p>
-          <p>Data</p>
+          <Form/>
         </Modal>
         <button type='button' onClick={this.showModal}>Open</button>
         <Link to="/tracks/new"><i class="material-icons addbutton right medium">add</i></Link>
