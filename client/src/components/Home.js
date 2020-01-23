@@ -23,10 +23,8 @@ export class Home extends Component {
         <h2 className="center">Welcome to ProjectNotes</h2>
         <h4 class="center grey-text">Keep your music projects on track</h4>
         <Modal show={this.state.show} handleClose={this.hideModal} >
-          <Form/>
         </Modal>
-        <button type='button' onClick={this.showModal}>Open</button>
-        <Link to="/tracks/new"><i class="material-icons addbutton right medium">add</i></Link>
+        <a type="button" class="right" onClick={this.showModal}><i class="material-icons addbutton right medium">add</i></a>
         <List></List>
       </div>
     )
@@ -40,11 +38,12 @@ let Modal = ({ handleClose, show, children }) => {
     <div className={showHideClassName}>
       <section className='modal-main'>
         {children}
-        <button
+        <a type="button" class="right"
           onClick={handleClose}
         >
-          Close
-        </button>
+          <i class="material-icons addbutton right small">close</i>
+        </a>
+        <Form/>
       </section>
     </div>
   );

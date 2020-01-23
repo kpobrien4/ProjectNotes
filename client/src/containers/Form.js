@@ -16,12 +16,6 @@ export class Form extends Component {
     }
   }
 
-  showModal = e => {
-    this.setState({
-      show: true
-    })
-  }
-
   handleChange = e => {
    const { name, value } = e.target;
     
