@@ -11,8 +11,15 @@ export class Form extends Component {
 
     this.state = {
       title: '',
-      notes: ''
+      notes: '',
+      show: false
     }
+  }
+
+  showModal = e => {
+    this.setState({
+      show: true
+    })
   }
 
   handleChange = e => {
