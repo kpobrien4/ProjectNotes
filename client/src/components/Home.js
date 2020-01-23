@@ -20,11 +20,11 @@ export class Home extends Component {
   render() {
     return (
       <div>
-        <h2 className="center">Welcome to ProjectNotes</h2>
+        <h2 className="center">ProjectNotes</h2>
         <h4 class="center grey-text">Keep your music projects on track</h4>
         <Modal show={this.state.show} handleClose={this.hideModal} >
         </Modal>
-        <a type="button" class="right" onClick={this.showModal}><i class="material-icons addbutton right medium">add</i></a>
+        <Link type="button" class="right" onClick={this.showModal}><i class="material-icons addbuttons right medium">add</i></Link>
         <List></List>
       </div>
     )
@@ -38,12 +38,12 @@ let Modal = ({ handleClose, show, children }) => {
     <div className={showHideClassName}>
       <section className='modal-main'>
         {children}
-        <a type="button" class="right"
+        <Link type="button" class="right"
           onClick={handleClose}
         >
           <i class="material-icons addbutton right small">close</i>
-        </a>
-        <Form/>
+          </Link>
+        <Form onSubmit={ handleClose }/>
       </section>
     </div>
   );

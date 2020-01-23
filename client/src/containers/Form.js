@@ -24,16 +24,21 @@ export class Form extends Component {
    })
   }
   
+  handleCloseModal () {
+    this.setState({ showModal: false });
+  }
+
   handleSubmit = e => {
     e.preventDefault();
 
     this.props.addTrack( this.state, this.props.history )
+    this.handleCloseModal();
   }
   
   render() {
     return (
         <div>
-        <h2>Add a track:</h2>
+        <h2 className="center">Add a track:</h2>
       <form id="track-form" onSubmit={ this.handleSubmit }>
         <Row>
           <Col s={12} m={4} l={6}>
@@ -43,11 +48,11 @@ export class Form extends Component {
             </div>
           </Col>
         </Row>
-        <label htmlFor="notes">Notes</label>
+        <label htmlFor="notes" className="noteslabel">Notes</label>
         <div className="input-field">
-          <textarea name="notes" id="notes" cols="30" rows="50" value={ this.state.notes } onChange={this.handleChange} required></textarea>
+          <textarea name="notes" id="notes" class="textareanotes" cols="30" rows="50" value={ this.state.notes } onChange={this.handleChange} required></textarea>
         </div>
-        <input type="submit" value="Add Track" className="btn light-blue darken-1 addbutton"  />
+        <input type="submit" value="Add Track" className="btn light-blue darken-1 addingbutton"  />
       </form>
       </div>
     )

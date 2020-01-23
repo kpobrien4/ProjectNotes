@@ -7,6 +7,7 @@
     background: rgba(0, 0, 0, 0.6);
     z-index: 9999;
 }
+
   
     .modal-main {
       position:fixed;
@@ -24,4 +25,18 @@
   
   .display-none {
     display: none;
+  }
+
+  .textareanotes{
+    width: 80%;
+    margin-left: 10px
+  }
+
+  .addingbutton {
+    margin: 20px;
+    border-radius: 15px;
+  }
+
+  .noteslabel{
+    margin-left: 15px;
   }
