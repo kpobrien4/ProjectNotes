@@ -31,6 +31,8 @@ export class Home extends Component {
   }
 }
 
+
+
 let Modal = ({ handleClose, show, children }) => {
   const showHideClassName = show ? 'modal display-block' : 'modal display-none';
 
@@ -49,7 +51,12 @@ let Modal = ({ handleClose, show, children }) => {
   );
 };
 
+const modal = document.getElementById("modal-main");
 
-const container = document.createElement('div');
-document.body.appendChild(container);
+window.onclick = function(event) {
+  if (event.target == modal) {
+    Modal.hideModal();
+  }
+}
+
 export default Home
